@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detetives da Poluição</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>🕵️‍♀️🧪♻️ Detetives da Poluição</h1>
+      <p>
+        Investigue pistas químicas, descubra o poluente e proponha a solução correta.
+      </p>
+    </header>
+
+    <main class="game-area">
+      <section class="case-box">
+        <h2>Caso Ambiental</h2>
+        <p id="story"></p>
+      </section>
+
+      <section class="clues-box">
+        <div class="section-header">
+          <h2>Pistas Coletadas</h2>
+          <button id="clueBtn">Coletar pista</button>
+        </div>
+        <ul id="clueList"></ul>
+      </section>
+
+      <section class="answer-box">
+        <h2>Resolver o Caso</h2>
+
+        <label for="pollutant">Qual é o poluente?</label>
+        <select id="pollutant">
+          <option value="">Selecione</option>
+          <option value="baterias">Baterias descartadas incorretamente</option>
+          <option value="plastico">Resíduos plásticos</option>
+          <option value="oleo">Óleo industrial</option>
+          <option value="esgoto">Esgoto químico</option>
+        </select>
+
+        <label for="solution">Qual é a solução adequada?</label>
+        <select id="solution">
+          <option value="">Selecione</option>
+          <option value="coleta_baterias">Coleta especial e reciclagem de metais</option>
+          <option value="reciclagem_plastico">Separação e reciclagem de plásticos</option>
+          <option value="tratamento_oleo">Tratamento e contenção do óleo</option>
+          <option value="tratamento_esgoto">Tratamento químico do esgoto</option>
+        </select>
+
+        <button id="solveBtn">Investigar resposta</button>
+      </section>
+
+      <section class="result-box">
+        <h2>Resultado da Investigação</h2>
+        <p id="resultMessage">Colete pistas para começar a investigação.</p>
+      </section>
+
+      <section class="score-box">
+        <h2>Pontuação</h2>
+        <p>Pistas coletadas: <span id="score">0</span></p>
+        <button id="restartBtn">Novo caso</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Projeto educativo de Química e Sustentabilidade.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
